@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects - Gilang Ramadhan</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- SCROLL PROGRESS BAR -->
+    <div id="scrollProgress"></div>
+    <!-- NAVBAR -->
+    <nav>
+      <p>Gilang Ramadhan</p>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <div class="page-header fade-up">
+      <div class="badge">✦ My Work</div>
+      <h1>Featured <span>Projects</span></h1>
+      <p class="page-subtitle">
+        Kumpulan proyek yang saya kerjakan selama belajar web development.
+      </p>
+    </div>
+
+    <!-- FILTER BUTTONS -->
+    <div class="filter-wrap fade-up">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="php">PHP</button>
+      <button class="filter-btn" data-filter="javascript">JavaScript</button>
+      <button class="filter-btn" data-filter="laravel">Laravel</button>
+    </div>
+
+    <!-- PROJECTS GRID -->
+    <main class="projects-grid fade-up">
+      <!-- Project 1 -->
+      <article class="project-card-full" data-category="php">
+        <div class="project-img">
+          <img
+            src="assets/images/project1.jpg"
+            alt="Sistem Manajemen Perpustakaan"
+          />
+          <div class="project-img-placeholder">📚</div>
+        </div>
+        <div class="project-content">
+          <div class="project-tags">
+            <span class="tag">PHP</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Bootstrap</span>
+          </div>
+          <h3>Sistem Manajemen Perpustakaan</h3>
+          <p>
+            Aplikasi web untuk manajemen peminjaman buku, data anggota, dan
+            laporan perpustakaan. Dilengkapi fitur login admin dan pencarian
+            buku real-time.
+          </p>
+          <div class="project-links">
+            <a href="#" class="btn-outline"> <span>⟨/⟩</span> Source Code </a>
+            <a href="#" class="btn-primary-sm"> <span>↗</span> Live Demo </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="project-card-full" data-category="php">
+        <div class="project-img">
+          <img src="assets/images/project2.jpg" alt="Website Portofolio" />
+          <div class="project-img-placeholder">🌐</div>
+        </div>
+        <div class="project-content">
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <h3>Website Portofolio Pribadi</h3>
+          <p>
+            Website portofolio pribadi yang responsif dengan animasi scroll,
+            typing effect, dan dark mode. Dibangun dari nol tanpa framework CSS.
+          </p>
+          <div class="project-links">
+            <a href="#" class="btn-outline"> <span>⟨/⟩</span> Source Code </a>
+            <a href="#" class="btn-primary-sm"> <span>↗</span> Live Demo </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="project-card-full" data-category="laravel">
+        <div class="project-img">
+          <img src="assets/images/project3.jpg" alt="Sistem Inventaris" />
+          <div class="project-img-placeholder">📦</div>
+        </div>
+        <div class="project-content">
+          <div class="project-tags">
+            <span class="tag">Laravel</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Blade</span>
+          </div>
+          <h3>Sistem Manajemen Inventaris</h3>
+          <p>
+            Aplikasi manajemen stok barang dengan fitur CRUD lengkap, laporan
+            bulanan, dan notifikasi stok menipis menggunakan framework Laravel.
+          </p>
+          <div class="project-links">
+            <a href="#" class="btn-outline"> <span>⟨/⟩</span> Source Code </a>
+            <a href="#" class="btn-primary-sm"> <span>↗</span> Live Demo </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 4 -->
+      <article class="project-card-full" data-category="javascript">
+        <div class="project-img">
+          <img src="assets/images/project4.jpg" alt="Todo App" />
+          <div class="project-img-placeholder">✅</div>
+        </div>
+        <div class="project-content">
+          <div class="project-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">CSS</span>
+            <span class="tag">LocalStorage</span>
+          </div>
+          <h3>Todo App dengan LocalStorage</h3>
+          <p>
+            Aplikasi manajemen tugas dengan fitur tambah, edit, hapus, dan
+            filter berdasarkan status. Data tersimpan otomatis di browser
+            menggunakan LocalStorage.
+          </p>
+          <div class="project-links">
+            <a href="#" class="btn-outline"> <span>⟨/⟩</span> Source Code </a>
+            <a href="#" class="btn-primary-sm"> <span>↗</span> Live Demo </a>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2025 Gilang Ramadhan · Dibuat dengan HTML, CSS & JavaScript</p>
+      <ul>
+        <li><a href="#"></a></li>
+      </ul>
+    </footer>
+    <!-- BACK TO TOP -->
+    <button id="backToTop" title="Kembali ke atas">↑</button>
+    <script src="js/main.js"></script>
+  </body>
+</html>
