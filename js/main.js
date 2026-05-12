@@ -247,7 +247,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (backToTop) {
     // Tampilkan tombol saat scroll cukup jauh
     window.addEventListener("scroll", function () {
-      if (window.scrollY > 400) {
+      if (window.scrollY > 500) {
         backToTop.classList.add("visible");
       } else {
         backToTop.classList.remove("visible");
