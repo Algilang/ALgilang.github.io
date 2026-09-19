@@ -207,10 +207,10 @@ header h1 span {
 }
 
 .skills-list span {
-  padding: 8px 20px;
+  padding: 7px 14px; /* ← kurangi padding */
   border: 1px solid var(--border);
   border-radius: 50px;
-  font-size: 0.85rem;
+  font-size: 0.8rem; /* ← kurangi font */
   color: var(--gray);
   background: var(--card);
   transition:
