@@ -26,16 +26,33 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // -------------------------------------------
-  // FITUR 2: NAVBAR AKTIF OTOMATIS
+  // FITUR 2: NAVBAR AKTIF SAAT SCROLL
+  // Highlight link navbar sesuai section yang terlihat
   // -------------------------------------------
-  const currentPage = window.location.pathname.split("/").pop() || "index.html";
-  const navLinks = document.querySelectorAll("nav ul a");
+  const sections = document.querySelectorAll("section[id]");
+  const navLinks = document.querySelectorAll(".nav-link");
 
-  navLinks.forEach(function (link) {
-    const linkPage = link.getAttribute("href");
-    if (linkPage === currentPage) {
-      link.classList.add("active");
-    }
+  window.addEventListener("scroll", function () {
+    let current = "";
+
+    sections.forEach(function (section) {
+      const sectionTop = section.offsetTop - 100;
+      const sectionHeight = section.offsetHeight;
+
+      if (
+        window.scrollY >= sectionTop &&
+        window.scrollY < sectionTop + sectionHeight
+      ) {
+        current = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach(function (link) {
+      link.classList.remove("active");
+      if (link.getAttribute("href") === "#" + current) {
+        link.classList.add("active");
+      }
+    });
   });
 
   // -------------------------------------------
